@@ -1,4 +1,10 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useContext,
+} from 'react';
 import { PDFPageProxy } from 'pdfjs-dist/types/display/api';
 import { useDocument } from '../Document/DocumentContext';
 import { PageContextProvider } from './PageContext';

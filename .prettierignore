@@ -1,0 +1,37 @@
+# COPIED FROM GITIGNORE
+# Next
+.next
+node_modules
+
+# OS-generated files
+.DS_Store
+
+# Editor generated files
+.idea
+*.sublime-project
+*.sublime-workspace
+.phpintel
+
+# Vagrant
+.vagrant
+
+# Ansible
+*.retry
+
+# Newrelic
+*.log
+*newrelic.js
+
+# Capistrano
+log/capistrano.log*
+
+# Code Coverage
+coverage
+coverage_out
+
+# Build folders
+.storybook_build
+
+# SPECIFIC TO PRETTIERIGNORE
+# Static assets folder
+public
