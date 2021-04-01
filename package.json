@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "eslint . --ignore-path .gitignore --ext .js,.jsx,.tsx,.ts",
     "lint:fix": "eslint --fix --ignore-path .gitignore . --ext .js,.jsx,.tsx,.ts"
   },
   "dependencies": {
@@ -71,6 +72,7 @@
     "@types/classnames": "2.2.11",
     "@types/jest": "24.0.14",
     "@types/pdfjs-dist": "2.7.0",
+    "@types/react": "16.9.56",
     "@types/react-bootstrap": "0.32.25",
     "@types/react-dom": "16.9.10",
     "@types/react-redux": "7.1.16",

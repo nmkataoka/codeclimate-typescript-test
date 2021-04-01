@@ -13,10 +13,11 @@ module.exports = {
   globals: {
     window: true,
   },
+  ignorePatterns: ['.eslintrc.js'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
-    project: './linters/tsconfig.eslint.json',
+    project: './tsconfig.json',
   },
   plugins: [
     '@typescript-eslint',
@@ -35,9 +36,8 @@ module.exports = {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     'import/resolver': {
-      node: {
+      typescript: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        paths: ['./', 'components'],
       },
     },
     'postcss-modules': {

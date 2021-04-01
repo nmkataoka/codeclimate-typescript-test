@@ -4,14 +4,6 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "components/*",
-        "*",
-        "types/*",
-      ]
-    },
     "jsx": "preserve",
     "lib": [
       "dom",
@@ -27,10 +19,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "typeRoots": [
-    "node_modules/@types",
-    "./types",
-  ],
   "include": [
     "next-env.d.ts",
     "**/*.js",
@@ -40,6 +28,5 @@
   ],
   "exclude": [
     "node_modules",
-    "types",
   ]
 }
