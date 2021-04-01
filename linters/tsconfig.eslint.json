@@ -1,15 +1,5 @@
 {
   "extends": "../tsconfig.json",
-  "exclude": [
-    "../node_modules"
-  ],
-  "include": [
-    "../next-env.d.ts",
-    "../**/*.js",
-    "../**/*.jsx",
-    "../**/*.ts",
-    "../**/*.tsx"
-  ],
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true
