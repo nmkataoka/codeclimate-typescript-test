@@ -17,7 +17,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
-    project: './linters/tsconfig.eslint.json',
+    project: './tsconfig.json',
   },
   plugins: [
     '@typescript-eslint',
