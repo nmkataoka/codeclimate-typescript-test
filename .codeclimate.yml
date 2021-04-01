@@ -1,0 +1,41 @@
+version: "2"
+checks:
+  method-lines:
+    config:
+      threshold: 100
+plugins:
+  eslint:
+    enabled: true
+    channel: "eslint-7"
+    config:
+      config: ./.eslintrc.js
+      extensions:
+        - .js
+        - .jsx
+        - .ts
+        - .tsx
+    checks:
+      import/extensions:
+        enabled: false
+      postcss-modules/no-undef-class:
+        enabled: false
+      sort-destructure-keys/sort-destructure-keys:
+        enabled: false
+  stylelint:
+    enabled: true
+    config:
+        config: ./.stylelintrc.yml
+  duplication:
+    enabled: false
+  fixme:
+    enabled: true
+    config:
+      strings:
+      - "http:"
+exclude_patterns:
+  - "**"
+  - "!styles/**/*"
+  - "!components/**/*"
+  - "!pages/**/*"
+  - "!layouts/**/*"
+  - "!store/**/*"
