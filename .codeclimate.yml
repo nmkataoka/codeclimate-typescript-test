@@ -22,9 +22,7 @@ plugins:
       sort-destructure-keys/sort-destructure-keys:
         enabled: false
   stylelint:
-    enabled: true
-    config:
-        config: ./.stylelintrc.yml
+    enabled: false
   duplication:
     enabled: false
   fixme:
