@@ -4,14 +4,6 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "*": [
-        "components/*",
-        "*",
-        "types/*",
-      ]
-    },
     "jsx": "preserve",
     "lib": [
       "dom",
