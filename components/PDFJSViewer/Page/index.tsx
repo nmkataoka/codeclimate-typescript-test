@@ -3,7 +3,7 @@ import React, {
   useEffect,
   useMemo,
   useState,
-  useContext,
+  createContext,
 } from 'react';
 import { PDFPageProxy } from 'pdfjs-dist/types/display/api';
 import { useDocument } from '../Document/DocumentContext';
@@ -20,6 +20,8 @@ export type PageProps = {
   pageNumber: number;
   scale?: number;
 };
+
+export const superContext = createContext(undefined);
 
 const Page = React.forwardRef(
   (
