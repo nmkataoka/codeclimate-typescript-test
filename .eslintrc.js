@@ -13,6 +13,7 @@ module.exports = {
   globals: {
     window: true,
   },
+  ignorePatterns: ['.eslintrc.js'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
